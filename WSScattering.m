@@ -14,7 +14,7 @@ table with values of the differential scattering cross-section \
 calculated from the scattering amplitude. The density of table \
 entries increases with increasing value for points."
 
-Eif0::usage="f[k, \[Theta], m:938.272046, \
+Eif0::usage="Eif[k, \[Theta], m:938.272046, \
 V0:-39.42463943157022-7.884927886314045*I, R:3, a:0.54] gives \
 the scattering amplitude calculated via the zeroth order eikonal \
 expansion."
@@ -26,7 +26,7 @@ calculated from the zeroth order eikonal scattering amplitude. \
 The density of table entries increases with increasing value for \
 points."
 
-Eif1::usage="f[k, \[Theta], m:938.272046, \
+Eif1::usage="Eif[k, \[Theta], m:938.272046, \
 V0:-39.42463943157022-7.884927886314045*I, R:3, a:0.54] gives \
 the scattering amplitude calculated via the first order eikonal \
 expansion."
@@ -38,7 +38,7 @@ calculated from the first order eikonal scattering amplitude. \
 The density of table entries increases with increasing value for \
 points."
 
-Eif2::usage="f[k, \[Theta], m:938.272046, \
+Eif2::usage="Eif[k, \[Theta], m:938.272046, \
 V0:-39.42463943157022-7.884927886314045*I, R:3, a:0.54] gives \
 the scattering amplitude calculated via the second order eikonal \
 expansion."
@@ -50,7 +50,7 @@ calculated from the second order eikonal scattering amplitude. \
 The density of table entries increases with increasing value for \
 points."
 
-Eif3::usage="f[k, \[Theta], m:938.272046, \
+Eif3::usage="Eif[k, \[Theta], m:938.272046, \
 V0:-39.42463943157022-7.884927886314045*I, R:3, a:0.54] gives \
 the scattering amplitude calculated via the third order eikonal \
 expansion."
