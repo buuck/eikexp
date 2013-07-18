@@ -10,14 +10,43 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[      5586,        175]
-NotebookOptionsPosition[      5077,        153]
-NotebookOutlinePosition[      5413,        168]
-CellTagsIndexPosition[      5370,        165]
+NotebookDataLength[      4561,        143]
+NotebookOptionsPosition[      4111,        123]
+NotebookOutlinePosition[      4467,        139]
+CellTagsIndexPosition[      4424,        136]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"m", "=", 
+   RowBox[{
+    RowBox[{"4", "/", "5"}], "*", "938.272046"}]}], 
+  RowBox[{"(*", 
+   RowBox[{"Mega", " ", "ElectronVolt"}], "*)"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[HBar]c", "=", "197.32697178"}], 
+  RowBox[{"(*", 
+   RowBox[{"Mega", " ", "ElectronVolt", "*", "Femto", " ", "Meter"}], "*)"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"e", "=", 
+   RowBox[{"Sqrt", "[", "1.4399764", "]"}]}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"Mega", " ", "ElectronVolt", "*", "Femto", " ", "Meter"}], 
+      ")"}], "^", "1"}], "/", "2"}], "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"herad", "=", "31000"}], 
+  RowBox[{"(*", 
+   RowBox[{"Femto", " ", "Meter"}], "*)"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.583090338685917*^9, 3.583090349108609*^9}, 
+   3.583090482176903*^9, {3.583090575300832*^9, 3.58309059170543*^9}}],
+
 Cell[BoxData[{
  RowBox[{
   RowBox[{
@@ -33,7 +62,7 @@ Cell[BoxData[{
         RowBox[{"(", "\[HBar]c", ")"}], "^", "2"}]}], ")"}]}], "*", 
     RowBox[{"BesselK", "[", 
      RowBox[{"0", ",", 
-      RowBox[{"b", "/", "31000"}]}], "]"}]}]}], 
+      RowBox[{"b", "/", "herad"}]}], "]"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"T0", "[", 
@@ -67,93 +96,35 @@ Cell[BoxData[{
   3.583084410475835*^9}, {3.583084503853198*^9, 3.583084504462399*^9}, {
   3.583085528891059*^9, 3.583085543766629*^9}, {3.583085648955401*^9, 
   3.583085650166259*^9}, {3.5830857880894423`*^9, 3.583085808148244*^9}, {
-  3.583085865789341*^9, 3.583085866196021*^9}}],
+  3.583085865789341*^9, 3.583085866196021*^9}, {3.583090360749215*^9, 
+  3.5830903626056547`*^9}}],
+
+Cell["Optical Theorem:", "Text",
+ CellChangeTimes->{{3.583090641302026*^9, 3.58309064407277*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"4", "*", "Pi", "*", 
-  RowBox[{
-   RowBox[{"Im", "[", 
-    RowBox[{"Eif0", "[", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"Sqrt", "[", 
-        RowBox[{"2", "*", 
-         RowBox[{"5", "/", "4"}], "*", "m", "*", "71"}], "]"}], "/", 
-       "\[HBar]c"}], ",", "0"}], "]"}], "]"}], "/", 
-   RowBox[{"(", 
-    RowBox[{
-     RowBox[{"Sqrt", "[", 
-      RowBox[{"2", "*", 
-       RowBox[{"5", "/", "4"}], "*", "m", "*", "71"}], "]"}], "/", 
-     "\[HBar]c"}], ")"}]}]}]], "Input",
+  RowBox[{"Im", "[", 
+   RowBox[{"Eif0", "[", 
+    RowBox[{"1", ",", "0"}], "]"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.583084374032112*^9, 3.583084379153245*^9}, {
   3.583084598165536*^9, 3.583084607088765*^9}, {3.583085461216899*^9, 
-  3.583085467006673*^9}}],
+  3.583085467006673*^9}, {3.583092613865196*^9, 3.583092620190405*^9}}],
 
-Cell[BoxData["1.0871196024844972`*^7"], "Output",
+Cell[BoxData["3.7141441658512145`*^7"], "Output",
  CellChangeTimes->{
   3.583084379776909*^9, 3.583084514921896*^9, {3.5830846017531967`*^9, 
    3.583084607894415*^9}, 3.5830854684370747`*^9, 3.58308555575764*^9, 
    3.58308565331355*^9, 3.583085794342705*^9, {3.5830858605968533`*^9, 
-   3.583085871650878*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"2", "*", "Pi", "*", 
-  RowBox[{"Integrate", "[", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"1", "/", "16"}], "*", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"2", "*", 
-         RowBox[{
-          RowBox[{"e", "^", "2"}], "/", "71"}]}], ")"}], "^", "2"}], "/", 
-      RowBox[{
-       RowBox[{"Sin", "[", 
-        RowBox[{"\[Theta]", "/", "2"}], "]"}], "^", "3"}]}]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"\[Theta]", ",", "0", ",", "Pi"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.583086109198854*^9, 3.583086111846004*^9}, {
-  3.583086158998046*^9, 3.583086216681954*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Integrate", "::", "\<\"idiv\"\>"}], 
-  RowBox[{
-  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Integral of \\\\\\\"\\\", \\\
-\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\(Csc[\\(\\(\[Theta]\\/2\\)\\)]\
-\\)\\^3\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" does not \
-converge on \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({0, \
-\[Pi]}\\), \
-\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\".\\\\\\\"\\\", \\\"MT\\\
-\"]\\) \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/Integrate/idiv\\\", ButtonNote -> \
-\\\"Integrate::idiv\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.583086217530287*^9}],
-
-Cell[BoxData[
- RowBox[{"2", " ", "\[Pi]", " ", 
-  RowBox[{
-   SubsuperscriptBox["\[Integral]", "0", "\[Pi]"], 
-   RowBox[{
-    RowBox[{"0.00010283336801016467`", " ", 
-     SuperscriptBox[
-      RowBox[{"Csc", "[", 
-       FractionBox["\[Theta]", "2"], "]"}], "3"]}], 
-    RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}]], "Output",
- CellChangeTimes->{3.583086217532668*^9}]
+   3.583085871650878*^9}, 3.5830904887831717`*^9, 3.583092623997321*^9}]
 }, Open  ]]
 },
 WindowSize->{640, 705},
 WindowMargins->{{Automatic, 38}, {Automatic, 0}},
-FrontEndVersion->"7.0 for Linux x86 (64-bit) (February 25, 2009)",
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 23, \
+2011)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -167,19 +138,15 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[545, 20, 1707, 49, 121, "Input"],
+Cell[545, 20, 947, 27, 73, "Input"],
+Cell[1495, 49, 1758, 50, 88, "Input"],
+Cell[3256, 101, 97, 1, 26, "Text"],
 Cell[CellGroupData[{
-Cell[2277, 73, 666, 19, 32, "Input"],
-Cell[2946, 94, 312, 5, 33, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[3295, 104, 626, 18, 32, "Input"],
-Cell[3924, 124, 761, 14, 41, "Message"],
-Cell[4688, 140, 373, 10, 48, "Output"]
+Cell[3378, 106, 356, 7, 27, "Input"],
+Cell[3737, 115, 358, 5, 30, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
